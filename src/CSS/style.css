@@ -1,18 +1,56 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-.logo{
-    height: 64px;
+.logo {
+  height: 64px;
 }
 .header-seperator {
-    padding-left: 25px;
+  padding-left: 25px;
 }
-.about{
-    background-color: #0047AB;
+.about {
+  background-color: #0047ab;
+  padding: 40px 0;
+}
+.about h5 {
+  margin-top: -20px;
+}
+.about span,
+ul {
+  font-size: 20px;
+}
+.about ul {
+  margin-top: 0;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.about ul li a {
+  color: white;
+}
+.about .rightSection,
+.about .btn-appointment {
+  margin-top: 60px;
+}
+a.waves-effect {
+  border-radius: 5px;
 }
 
+@media (max-width: 992px) {
+  .about .rightSection img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+  }
+  .about .btn-appointment {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 338px;
+    float: none !important;
+  }
+}
 @media (max-width: 600px) {
-    .logo{
-        height: 56px;
-    }
+  .logo {
+    height: 56px;
+  }
 }
