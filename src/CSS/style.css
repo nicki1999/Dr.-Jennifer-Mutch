@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white !important;
 }
 .logo {
   height: 64px;
@@ -7,41 +7,80 @@ body {
 .header-seperator {
   padding-left: 25px;
 }
-.about {
+.introduction {
   background-color: #0047ab;
   padding: 40px 0;
 }
-.about h5 {
+.introduction h5 {
   margin-top: -20px;
 }
-.about span,
+.introduction span,
 ul {
   font-size: 20px;
 }
-.about ul {
+.introduction ul {
   margin-top: 0;
   list-style-type: disc;
   padding-left: 20px;
 }
-.about ul li a {
+.introduction ul li a {
   color: white;
 }
-.about .rightSection,
-.about .btn-appointment {
+.introduction .rightSection,
+.introduction .btn-appointment {
   margin-top: 60px;
 }
 a.waves-effect {
   border-radius: 5px;
 }
-
+.about .icon-holders {
+  margin-top: 50px;
+}
+.about .icon-holders .title {
+  margin-top: 20px !important;
+  font-size: 20px;
+}
+.about .icon-holders i {
+  font-size: 2.8rem;
+}
+.about .icon-holders a.btn-large {
+  background-color: #0047ab;
+  height: 85px;
+  width: 150px;
+  line-height: 85px;
+}
+.about .icon-holders ul li {
+  font-size: 18px;
+}
+.about .icon-holders .aboutCard {
+  margin-top: 60px;
+}
+.experties .card-holders {
+  margin-left: auto;
+  margin-right: auto;
+}
+.experties {
+  padding-bottom: 60px;
+}
+.experties .card .card-image img {
+  padding: 30px;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (max-width: 992px) {
-  .about .rightSection img {
+  .about .icon-holders .aboutCard {
+    float: none;
+    margin-top: 100px;
+  }
+  .introduction .rightSection img {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
     float: none !important;
   }
-  .about .btn-appointment {
+  .introduction .btn-appointment {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;

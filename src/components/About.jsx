@@ -1,42 +1,63 @@
-import jenniferMutch from "../images/JenniferMutch.jpg";
+import AboutCard from "./miniSections/AboutCard";
 export default function About() {
   return (
     <div className="row about">
-      <div className="container">
-        <div className="col s12 l9 white-text left leftSection">
-          <h1 className="white-text">
-            <b>Dr. Jennifer Mutch</b>
-          </h1>
-          <h5>Orthopedic Surgeon</h5>
+      <div className="center">
+        <div className="col s10 offset-s1 ">
+          <h2 className="center">
+            <u>About Dr. Mutch</u>
+          </h2>
           <br />
-          <span>Specialized in: </span>
-          <ul>
-            <li>
-              <a href="">- Surgery of the Shoulder, Elbow</a>
-            </li>
-            <li>
-              <a href="">
-                - Nerve Decompression (Carpal Tunnel, Cubital Tunnel)
-              </a>
-            </li>
-            <li>
-              <a href="">
-                - Knee Replacement, Partial Knee Replacement, Hip Replacement,
-                Shoulder Replacement
-              </a>
-            </li>
-            <li>
-              <a href="">- Ultrasound-Guided joint Injections</a>
-            </li>
-          </ul>
-        </div>
-        <div className="col s12 l3 rightSection">
-          <img src={jenniferMutch} alt="" className="right" />
-        </div>
-        <div className="col s12">
-          <a class="waves-effect waves-light btn-large white black-text btn-appointment">
-            <i class="material-icons left">schedule</i>Book an appointment
-          </a>
+          <br />
+          <div className="center">
+            <span style={{ fontSize: "1.2rem" }}>
+              Expert in orthopaedic surgery, specializing in sports injuries,
+              joint replacements, and reconstruction to help patients regain
+              mobility and quality of life.
+            </span>
+          </div>
+          <div className="icon-holders center">
+            <AboutCard
+              icon="school"
+              title="Medical School"
+              item1="McGill University"
+              item2=" Montreal, Quebec, Canada"
+              item3="2004 - 2009"
+            ></AboutCard>
+            <AboutCard
+              icon="local_library"
+              title="Residency Training"
+              item1="Université de Montréal"
+              item2=" Montreal, Quebec, Canada"
+              item3="2009 - 2014"
+            ></AboutCard>
+            <AboutCard
+              icon="local_hospital"
+              title="Fellowship Training"
+              item1="Detroit Medical Center"
+              item2="Detroit, Michigan, USA"
+              item3="2014- 2015"
+            ></AboutCard>
+            <AboutCard
+              icon="local_hospital"
+              title="Fellowship Training"
+              item1="Sunnybrook Hospital &  University of Toronto"
+              item2="Toronto, Ontario, Canada"
+              item3="2015 – 2016"
+            ></AboutCard>
+            <AboutCard
+              icon="library_books"
+              title="Research Interests"
+              item1="Upper Extremity"
+              item2="Trauma"
+            ></AboutCard>
+            <AboutCard
+              icon="local_pharmacy"
+              title="Clinical Interests"
+              item1="Upper Limb / Hand Trauma & Reconstruction"
+              item2="Sports Medicine & Arthroplasty"
+            ></AboutCard>
+          </div>
         </div>
       </div>
     </div>
