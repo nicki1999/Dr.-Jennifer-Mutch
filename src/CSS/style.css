@@ -69,6 +69,10 @@ a.waves-effect {
   margin-left: auto;
   margin-right: auto;
 }
+.articles .card-holders .title-container{
+  width: 100%;
+  height: 80px;
+}
 @media (max-width: 992px) {
   .about .icon-holders .aboutCard {
     float: none;
