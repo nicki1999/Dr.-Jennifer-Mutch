@@ -5,10 +5,10 @@ import ShoulderReplacement from "../images/ShoulderReplacement.png";
 import ExpertiesCard from "./miniSections/ExpertiesCard";
 export default function Experties() {
   return (
-    <div className="row experties indigo lighten-4">
+    <div className="row experties indigo lighten-4" id="expertise">
       <div className="col s10 offset-s1">
         <h2 className="center">
-          <u>Experties</u>
+          <u>Expertise</u>
         </h2>
         <br />
         <br />

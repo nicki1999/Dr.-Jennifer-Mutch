@@ -1,7 +1,7 @@
 import AboutCard from "./miniSections/AboutCard";
 export default function About() {
   return (
-    <div className="row about">
+    <div className="row about" id="about">
       <div className="center">
         <div className="col s10 offset-s1 ">
           <h2 className="center">

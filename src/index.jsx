@@ -5,6 +5,7 @@ import Introduction from "./components/Introduction";
 import About from "./components/About";
 import Experties from "./components/Experties";
 import Articles from "./components/Articles";
+import Footer from "./components/layout/Footer";
 //use NavLink for navigation
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,5 +15,6 @@ root.render(
     <About></About>
     <Experties></Experties>
     <Articles></Articles>
+    <Footer></Footer>
   </div>
 );
