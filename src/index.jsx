@@ -1,20 +1,23 @@
 import ReactDOM from "react-dom/client";
-import "./CSS/style.css";
+import React from "react";
+import Home from "./Home";
 import Header from "./components/layout/Header";
-import Introduction from "./components/Introduction";
-import About from "./components/About";
-import Experties from "./components/Experties";
-import Articles from "./components/Articles";
 import Footer from "./components/layout/Footer";
+import KneeReplacement from "./KneeReplacement";
+import "./CSS/style.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 //use NavLink for navigation
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <div>
-    <Header></Header>
-    <Introduction></Introduction>
-    <About></About>
-    <Experties></Experties>
-    <Articles></Articles>
-    <Footer></Footer>
-  </div>
+  <React.StrictMode>
+    <BrowserRouter>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/KneeReplacement" element={<KneeReplacement />} />
+      </Routes>
+      <Footer></Footer>
+    </BrowserRouter>
+  </React.StrictMode>
 );

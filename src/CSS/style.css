@@ -171,3 +171,29 @@ a.waves-effect {
     height: 56px;
   }
 }
+
+/*Experties KneeReplacement styles*/
+.ExpertiseIntroduction {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ExpertiseIntroduction .KneeReplacementRealLife {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  display: block;
+}
+.ExpertiseIntroduction .description {
+  background-color: #0047ab;
+  position: absolute;
+  top: 50%; /* Adjust to your preferred position */
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
