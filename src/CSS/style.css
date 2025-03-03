@@ -197,3 +197,18 @@ a.waves-effect {
   border-radius: 5px;
   text-align: center;
 }
+.ExpertiseIntroduction .description {
+  text-align: left !important;
+  padding: 30px;
+}
+.ExpertiseIntroduction .description ul li a {
+  color: white;
+}
+.ExpertiseIntroduction .description ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ExpertiseIntroduction .description ul li a i {
+  padding-left: 10px;
+}
