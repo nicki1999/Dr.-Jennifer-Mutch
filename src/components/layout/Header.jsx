@@ -30,6 +30,13 @@ export default function Header() {
                 <span> St-Mary’s hospital </span>
               </a>
             </li>
+            <li className="book-appointment">
+              <div className="col s12">
+                <a class="waves-effect waves-light white black-text btn-appointment">
+                  Book an appointment
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
