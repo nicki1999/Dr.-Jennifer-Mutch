@@ -11,9 +11,20 @@ export default function About() {
           <br />
           <div className="center">
             <span style={{ fontSize: "1.2rem" }}>
-              Expert in orthopaedic surgery, specializing in sports injuries,
+              {/* Expert in orthopaedic surgery, specializing in sports injuries,
               joint replacements, and reconstruction to help patients regain
-              mobility and quality of life.
+              mobility and quality of life. */}
+              Dr Mutch is a reputable academic orthopedic surgeon working out of
+              the highest volume centre for hip and knee replacements in the
+              province of Quebec, Canada. There, she is the surgical lead for
+              the ERAS program (enhanced recovery after surgery) and the head of
+              Quality Improvement in Orthopedics, ensuring that her patients
+              continue to receive the most up-to-date and highest quality of
+              care available and helping then recover from surgery rapidly. She
+              maintains expertise in multiple surgical systems and is able to
+              tailor the surgery to the needs of the patient. Dr. Mutch is able
+              to offer partial and full knee replacement, hip replacement and
+              both total and reverse total shoulder replacement.
             </span>
           </div>
           <div className="icon-holders center">

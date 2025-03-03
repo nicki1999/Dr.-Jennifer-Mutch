@@ -7,6 +7,24 @@ body {
 .header-seperator {
   padding-left: 25px;
 }
+nav.non-stick-navbar {
+  margin-top: 35px;
+}
+nav.stick-navbar {
+  position: fixed;
+  z-index: 1000;
+  margin-top: -35px;
+}
+nav.stick-navbar,
+nav.stick-navbar ul li a {
+  height: 33px;
+}
+nav.stick-navbar ul li a {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
 .introduction,
 .footer {
   background-color: #0047ab;
@@ -108,7 +126,13 @@ a.waves-effect {
   margin-right: 10px;
   font-size: 25px;
 }
-
+.experties .card-holders {
+  align-content: start;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
 @media (max-width: 992px) {
   .about .icon-holders .aboutCard {
     float: none;

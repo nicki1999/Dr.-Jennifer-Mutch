@@ -1,6 +1,7 @@
 import KneeReplacement from "../images/KneeReplacement.png";
 import HipReplacement from "../images/HipReplacement.png";
 import ShoulderReplacement from "../images/ShoulderReplacement.png";
+import RoboticSurgery from "../images/RoboticSurgery.png";
 
 import ExpertiesCard from "./miniSections/ExpertiesCard";
 export default function Experties() {
@@ -27,6 +28,12 @@ export default function Experties() {
             image={HipReplacement}
             title="Hip replacement"
             description="Hip replacement surgery involves removing a damaged or worn-out hip joint and replacing it with an artificial joint, usually made of metal, ceramic, or plastic. This procedure is often recommended for individuals with severe arthritis, hip fractures, or joint degeneration to reduce pain and improve mobility."
+          ></ExpertiesCard>
+          <ExpertiesCard
+            image={RoboticSurgery}
+            title="Robotic surgery"
+            description="Robotic surgery in orthopedics is a minimally invasive procedure that uses robotics and imaging to perform bone and joint surgeries. It's used to treat conditions like osteoarthritis, spinal alignment issues, and degenerative spinal diseases. 
+"
           ></ExpertiesCard>
         </div>
       </div>
