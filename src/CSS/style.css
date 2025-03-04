@@ -144,6 +144,7 @@ a.waves-effect {
     font-size: 12px;
   }
 }
+
 @media (max-width: 992px) {
   .about .icon-holders .aboutCard {
     float: none;
@@ -211,4 +212,29 @@ a.waves-effect {
 }
 .ExpertiseIntroduction .description ul li a i {
   padding-left: 10px;
+}
+.ExpertiseContent img {
+  padding: 30px;
+}
+.ExpertiseContent .right-side h6 {
+  font-size: 30px;
+}
+.ExpertiseContent .right-side p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+.ExpertiseContent .Expertise-definition {
+  margin: 50px 0;
+}
+@media (max-width: 1200px) {
+  .ExpertiseContent .Expertise-definition .left-side {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .ExpertiseContent .Expertise-definition .right-side {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 60px;
+  }
 }
