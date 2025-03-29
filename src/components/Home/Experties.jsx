@@ -9,7 +9,7 @@ export default function Experties() {
     <div className="row experties indigo lighten-4" id="expertise">
       <div className="col s10 offset-s1">
         <h2 className="center">
-          <u>Expertise</u>
+          <u>Surgeries</u>
         </h2>
         <br />
         <br />

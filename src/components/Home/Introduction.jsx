@@ -1,9 +1,9 @@
-import jenniferMutch from "../../images/JenniferMutch.jpg";
+import jenniferMutch from "../../images/JenniferMutch.png";
 export default function Introduction() {
   return (
     <div className="row introduction">
       <div className="container">
-        <div className="col s12 l9 white-text left leftSection">
+        <div className="col s12 l6 white-text left leftSection">
           <h1 className="white-text">
             <b>Dr. Jennifer Mutch</b>
           </h1>
@@ -30,12 +30,12 @@ export default function Introduction() {
             </li>
           </ul>
         </div>
-        <div className="col s12 l3 rightSection">
+        <div className="col s12 l4 rightSection">
           <img src={jenniferMutch} alt="" className="right" />
         </div>
         <div className="col s12">
-          <a class="waves-effect waves-light btn-large white black-text btn-appointment">
-            <i class="material-icons left">schedule</i>Book an appointment
+          <a className="waves-effect waves-light btn-large white black-text btn-appointment">
+            <i className="material-icons left">schedule</i>Contact Us
           </a>
         </div>
       </div>

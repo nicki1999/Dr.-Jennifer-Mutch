@@ -1,6 +1,6 @@
 const AboutCard = (props) => {
   return (
-    <div className="col l4 aboutCard">
+    <div className="col l4 s12 aboutCard">
       <a class="waves-effect waves-light btn-large">
         <i class="material-icons center">{props.icon}</i>
       </a>

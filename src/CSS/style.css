@@ -30,7 +30,9 @@ nav.stick-navbar ul li a {
   align-items: center;
   white-space: nowrap; /* Prevent wrapping */
 }
-
+.introduction .rightSection {
+  width: 100%;
+}
 .introduction,
 .footer {
   background-color: #0047ab;
@@ -58,8 +60,12 @@ ul {
 a.waves-effect {
   border-radius: 5px;
 }
+.about {
+  margin: 70px 0 !important;
+}
 .about .icon-holders {
   margin-top: 50px;
+  clear: both;
 }
 .about .icon-holders .title {
   margin-top: 20px !important;
@@ -112,12 +118,13 @@ a.waves-effect {
   height: 350px;
 }
 .footer ul li a {
-  font-size: 22px;
+  font-size: 18px;
   color: white;
 }
 .footer .resources ul li {
   margin-top: 10px;
 }
+
 .footer .contactUs ul li {
   margin-top: 15px;
   display: flex;
@@ -125,12 +132,15 @@ a.waves-effect {
 }
 .footer .contactUs ul li a {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: flex-end;
 }
 .footer .contactUs ul li a i {
   margin-right: 10px;
   font-size: 25px;
+}
+.footer .real-contact-us li a {
+  font-size: 18px !important;
 }
 .experties .card-holders {
   align-content: start;
@@ -139,13 +149,31 @@ a.waves-effect {
   /* align-items: center; */
   flex-wrap: wrap;
 }
+@media (min-width: 992px) {
+  .introduction .rightSection {
+    float: right;
+  }
+  .about .aboutDrJenniferMutch img {
+    width: 300px;
+    float: right;
+    margin-top: 30px;
+  }
+}
 @media (max-width: 1126px) {
   nav.stick-navbar ul li a {
     font-size: 12px;
   }
 }
-
+@media (min-width: 992px) and (max-width: 1200px) {
+  .introduction .rightSection img {
+    width: 300px !important;
+  }
+}
 @media (max-width: 992px) {
+  .about .aboutDrJenniferMutch img {
+    margin: 100px 0;
+    width: 350px;
+  }
   .about .icon-holders .aboutCard {
     float: none;
     margin-top: 100px;

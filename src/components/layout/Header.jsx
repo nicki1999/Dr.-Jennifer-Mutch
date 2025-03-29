@@ -34,7 +34,7 @@ export default function Header() {
             <li className="book-appointment">
               <div className="col s12">
                 <a class="waves-effect waves-light white black-text btn-appointment">
-                  Book an appointment
+                  <i class="material-icons left">local_phone</i>Contact Us
                 </a>
               </div>
             </li>
@@ -56,13 +56,18 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="about.html" className="black-text">
+              <a href="#about" className="black-text">
                 About <span className="header-seperator">|</span>
               </a>
             </li>
             <li>
               <a href="expertise.html" className="black-text">
-                Expertise <span className="header-seperator">|</span>
+                Surgeries <span className="header-seperator">|</span>
+              </a>
+            </li>
+            <li>
+              <a href="#articles" className="black-text">
+                Articles <span className="header-seperator">|</span>
               </a>
             </li>
             <li>
@@ -84,13 +89,18 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="about.html" className="black-text">
+              <a href="#about" className="black-text">
                 About
               </a>
             </li>
             <li>
-              <a href="expertise.html" className="black-text">
-                Expertise
+              <a href="#expertise" className="black-text">
+                Surgeries
+              </a>
+            </li>
+            <li>
+              <a href="#articles" className="black-text">
+                Articles
               </a>
             </li>
             <li>
