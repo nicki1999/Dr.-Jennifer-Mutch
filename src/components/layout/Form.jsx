@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import M from "materialize-css"; // ✅ Import MaterializeCSS
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
+import M from "materialize-css";
 
 export default function Form() {
   const [inputFirstName, setInputFirstName] = useState("");
@@ -11,90 +10,66 @@ export default function Form() {
   const [userInsuranceType, setUserInsuranceType] = useState("");
   const [userFile, setUserFile] = useState(null);
 
-  const handleContactFormSubmit = (e) => {
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setUserFile(file); // Save the selected file
+    }
+  };
+
+  // Handle form submit
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
-    const data = {
-      userFirstname: formData.get("userFirstname"),
-      userLastname: formData.get("userLastname"),
-      userEmail: formData.get("userEmail"),
-      userPhone: formData.get("userPhone"),
-      userInsuranceType: formData.get("userInsuranceType"),
-    };
-
-    // If a file is uploaded, add it to the data object
-    if (userFile) {
-      data.userFile = userFile;
+    // Basic validation to make sure all fields are filled
+    if (
+      !inputFirstName ||
+      !inputLastName ||
+      !inputEmail ||
+      !inputPhone ||
+      !userInsuranceType ||
+      !userFile
+    ) {
+      alert("Please fill out all fields and select a file.");
+      return;
     }
 
-    sendEmail(data);
-  };
+    // Convert the file to base64 format (for image)
+    const fileReader = new FileReader();
+    fileReader.onloadend = () => {
+      const base64String = fileReader.result;
 
-  const sendEmail = (data) => {
-    const serviceId = "service_sylfva6";
-    const templateId = "template_zg6o8e8";
-    const userId = "43Pwn_Ki0Yy_5yqmE";
-
-    const emailParams = {
-      userFirstname: data.userFirstname,
-      userLastname: data.userLastname,
-      userEmail: data.userEmail,
-      userPhone: data.userPhone,
-      userInsuranceType: data.userInsuranceType,
-      userFile: data.userFile ? data.userFile.name : "", // Only send the file name if it exists
-    };
-
-    if (data.userFile) {
-      const fileReader = new FileReader();
-
-      fileReader.onloadend = () => {
-        // Ensure the file is a Blob (and hence can be read as a Data URL)
-        if (data.userFile instanceof Blob) {
-          emailParams.userFileContent = fileReader.result; // Add file content as base64
-
-          // Send the email with the file attachment
-          emailjs
-            .send(serviceId, templateId, emailParams, userId)
-            .then((response) => {
-              console.log("Email successfully sent:", response);
-              alert("Your message has been sent!");
-            })
-            .catch((error) => {
-              console.log("Failed to send email:", error);
-              alert("Something went wrong. Please try again later.");
-            });
-        } else {
-          console.error("The file is not a valid Blob object.");
-        }
+      const emailParams = {
+        userFirstname: inputFirstName,
+        userLastname: inputLastName,
+        userEmail: inputEmail,
+        userPhone: inputPhone,
+        userInsuranceType: userInsuranceType,
+        imageAttachment: base64String, // Base64 string of the file
       };
 
-      // Check if the file is an actual `Blob` (file object) before reading it
-      if (data.userFile instanceof Blob) {
-        fileReader.readAsDataURL(data.userFile); // Convert the file to base64
-      } else {
-        console.error("File is not valid or has not been selected correctly.");
-      }
-    } else {
-      // If no file, just send the form data
+      // Send the email with the form data and the image attachment
       emailjs
-        .send(serviceId, templateId, emailParams, userId)
-        .then((response) => {
-          console.log("Email successfully sent:", response);
-          alert("Your message has been sent!");
-        })
-        .catch((error) => {
-          console.log("Failed to send email:", error);
-          alert("Something went wrong. Please try again later.");
-        });
-    }
-  };
+        .send(
+          "service_sylfva6",
+          "template_zg6o8e8",
+          emailParams,
+          "43Pwn_Ki0Yy_5yqmE"
+        )
+        .then(
+          (response) => {
+            console.log("Email successfully sent:", response);
+            alert("Your message has been sent!");
+          },
+          (error) => {
+            console.log("Failed to send email:", error);
+            alert("Something went wrong. Please try again later.");
+          }
+        );
+    };
 
-  const handleFileChange = (e) => {
-    const files = e.target.files; // Get the selected files
-    if (files.length > 0) {
-      setUserFile(files[0]); // Set the first file selected
-    }
+    // Read the image file as a base64 string
+    fileReader.readAsDataURL(userFile);
   };
 
   useEffect(() => {
@@ -110,7 +85,6 @@ export default function Form() {
     const selectElems = document.querySelectorAll("select");
     const selectInstances = M.FormSelect.init(selectElems);
 
-    // Cleanup function to destroy instances on unmount
     return () => {
       selectInstances.forEach((instance) => instance.destroy());
     };
@@ -124,7 +98,7 @@ export default function Form() {
           <span>Description</span>
         </div>
         <div className="col l5 s12">
-          <form onSubmit={handleContactFormSubmit}>
+          <form onSubmit={handleFormSubmit} encType="multipart/form-data">
             <div className="input-field">
               <input
                 name="userFirstname"
@@ -136,6 +110,7 @@ export default function Form() {
               />
               <label htmlFor="name">First Name</label>
             </div>
+
             <div className="input-field">
               <input
                 name="userLastname"
@@ -147,6 +122,7 @@ export default function Form() {
               />
               <label htmlFor="name">Last Name</label>
             </div>
+
             <div className="input-field">
               <input
                 name="userEmail"
@@ -158,6 +134,7 @@ export default function Form() {
               />
               <label htmlFor="email">Email</label>
             </div>
+
             <div className="input-field">
               <input
                 name="userPhone"
@@ -187,11 +164,6 @@ export default function Form() {
               <label>Please select your insurance type</label>
             </div>
 
-            <br />
-            <br />
-            <br />
-            <br />
-
             <div className="file-field input-field">
               <div className="btn">
                 <span>File</span>
@@ -199,15 +171,16 @@ export default function Form() {
                   name="userFile"
                   type="file"
                   onChange={handleFileChange}
-                  multiple
+                  accept="image/*"
                 />
               </div>
               <div className="file-path-wrapper">
                 <input
                   className="file-path validate"
                   type="text"
-                  placeholder="Upload one or more files"
+                  placeholder="Upload an image"
                   value={userFile ? userFile.name : ""}
+                  readOnly
                 />
               </div>
             </div>
