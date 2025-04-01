@@ -7,6 +7,9 @@ body {
 .header-seperator {
   padding-left: 25px;
 }
+#mobile-demo .surgeries-sub-category {
+  padding-left: 20px;
+}
 nav.non-stick-navbar {
   margin-top: 60px;
 }
@@ -241,13 +244,25 @@ a.waves-effect {
 .ExpertiseIntroduction .description ul li a i {
   padding-left: 10px;
 }
-.ExpertiseContent img {
+.ExpertiseTargetAudience img, .expertiseDifferentTypes img{
+  width: 460px;
+}
+.expertiseDifferentTypes img{
+  height: 550px;
+}
+.ExpertiseTargetAudience ul li{
+  font-size: 18px;
+}
+.ExpertiseContent img, .ExpertiseTargetAudience img {
   padding: 30px;
 }
-.ExpertiseContent .right-side h6 {
+.expertiseDifferentTypes .left-side, .expertisePreparation .left-side {
+  text-align: center;
+}
+.ExpertiseContent .right-side h6, .ExpertiseTargetAudience .right-side h6, .expertiseDifferentTypes .right-side h6 {
   font-size: 30px;
 }
-.ExpertiseContent .right-side p {
+.ExpertiseContent .right-side p, .ExpertiseTargetAudience .right-side p, .expertiseDifferentTypes .right-side p{
   font-size: 18px;
   margin-top: 30px;
 }

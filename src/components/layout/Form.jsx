@@ -93,8 +93,8 @@ export default function Form() {
   return (
     <div className="row form">
       <div className="col s10 offset-s1 center">
-        <div className="col l5 12">
-          <h4>Title</h4>
+        <div className="col l5 12 left-align">
+          <h4>Regain Mobility Fast</h4>
           <span>Description</span>
         </div>
         <div className="col l5 s12">

@@ -7,6 +7,8 @@ export default function Header() {
   useEffect(() => {
     let elems = document.querySelectorAll(".sidenav");
     M.Sidenav.init(elems);
+    let dropdownElems = document.querySelectorAll(".dropdown-trigger");
+    M.Dropdown.init(dropdownElems);
   }, []);
   return (
     <div>
@@ -41,6 +43,14 @@ export default function Header() {
           </ul>
         </div>
       </nav>
+      <ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!" className="grey-text text-darken-3">Knee Replacement</a></li>
+  <li><a href="#!" className="grey-text text-darken-3">Hip Replacement</a></li>
+  <li class="divider"></li>
+  <li><a href="#!" className="grey-text text-darken-3">Shoulder Replacement</a></li>
+  <li><a href="#!" className="grey-text text-darken-3">Robotic-assisted Joint Replacement</a></li>
+
+</ul>
       <nav className="white non-stick-navbar">
         <div className="nav-wrapper container">
           <a href="#" className="brand-logo">
@@ -60,9 +70,15 @@ export default function Header() {
                 About <span className="header-seperator">|</span>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="expertise.html" className="black-text">
                 Surgeries <span className="header-seperator">|</span>
+              </a>
+            </li> */}
+                        <li>
+              <a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Surgeries
+               <i class="material-icons right">arrow_drop_down</i>
+               {/* <span className="header-seperator">|</span> */}
               </a>
             </li>
             <li>
@@ -80,6 +96,8 @@ export default function Header() {
                 EN | FR{" "}
               </a>
             </li>
+
+
           </ul>
 
           <ul className="sidenav" id="mobile-demo">
@@ -96,6 +114,26 @@ export default function Header() {
             <li>
               <a href="#expertise" className="black-text">
                 Surgeries
+              </a>
+            </li>
+            <li className="surgeries-sub-category"> 
+              <a href="#expertise" className="black-text">
+                  - Knee Replacement
+              </a>
+            </li>
+            <li className="surgeries-sub-category">
+              <a href="#expertise" className="black-text">
+                - Hip Replacement
+              </a>
+            </li>
+            <li className="surgeries-sub-category">
+              <a href="#expertise" className="black-text">
+                - Shoulder Replacement
+              </a>
+            </li>
+            <li className="surgeries-sub-category">
+              <a href="#expertise" className="black-text">
+                - Robotic-assisted Joint Replacement
               </a>
             </li>
             <li>
