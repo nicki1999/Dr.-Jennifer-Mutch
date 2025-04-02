@@ -17,20 +17,26 @@ export default function ExpertiseIntroduction() {
           <ul>
             <li>
               <a href="">
-                <i className="material-icons">link</i> &nbsp; What is "knee"
-                replacement
+                <i className="material-icons">link</i> &nbsp; Who should get a
+                knee replacement?
               </a>
             </li>
             <li>
               <a href="">
-                <i className="material-icons">link</i> &nbsp; Different types of
-                "knee" replacement
+                <i className="material-icons">link</i> &nbsp; What is a "knee"
+                replacement?
               </a>
             </li>
             <li>
               <a href="">
-                <i className="material-icons">link</i> &nbsp; Who is a candidate
-                for a "knee" replacement?
+                <i className="material-icons">link</i> &nbsp; Are there
+                different types of knee replacements?
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i className="material-icons">link</i> &nbsp; What are the steps
+                to your knee replacement?
               </a>
             </li>
             <li>
@@ -47,8 +53,8 @@ export default function ExpertiseIntroduction() {
             </li>
             <li>
               <a href="">
-                <i className="material-icons">link</i> &nbsp; What are the
-                risks?
+                <i className="material-icons">link</i> &nbsp; What are the risks
+                of knee replacement?
               </a>
             </li>
           </ul>

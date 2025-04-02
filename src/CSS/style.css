@@ -244,33 +244,46 @@ a.waves-effect {
 .ExpertiseIntroduction .description ul li a i {
   padding-left: 10px;
 }
-.ExpertiseTargetAudience img, .expertiseDifferentTypes img{
+.ExpertiseTargetAudience img,
+.expertiseDifferentTypes img {
   width: 460px;
-}
-.expertiseDifferentTypes img{
   height: 550px;
 }
-.ExpertiseTargetAudience ul li{
+.ExpertiseTargetAudience ul li,
+.expertisePreparation ul li {
   font-size: 18px;
 }
-.ExpertiseContent img, .ExpertiseTargetAudience img {
+.ExpertiseContent img,
+.ExpertiseTargetAudience img {
   padding: 30px;
 }
-.expertiseDifferentTypes .left-side, .expertisePreparation .left-side {
+.expertiseDifferentTypes .left-side,
+.expertisePreparation .left-side {
   text-align: center;
 }
-.ExpertiseContent .right-side h6, .ExpertiseTargetAudience .right-side h6, .expertiseDifferentTypes .right-side h6 {
+.expertisePreparation ul li {
+  display: flex !important;
+  margin-top: 10px;
+}
+.ExpertiseContent .right-side h6,
+.ExpertiseTargetAudience .right-side h6,
+.expertiseDifferentTypes .right-side h6 {
   font-size: 30px;
 }
-.ExpertiseContent .right-side p, .ExpertiseTargetAudience .right-side p, .expertiseDifferentTypes .right-side p{
+.ExpertiseContent .right-side p,
+.ExpertiseTargetAudience .right-side p,
+.expertiseDifferentTypes .right-side p {
   font-size: 18px;
   margin-top: 30px;
 }
 .ExpertiseContent .Expertise-definition {
   margin: 50px 0;
 }
+
 @media (max-width: 1200px) {
-  .ExpertiseContent .Expertise-definition .left-side {
+  .ExpertiseContent .Expertise-definition .left-side,
+  .expertiseDifferentTypes .left-side,
+  .expertiseDifferentTypes .right-side {
     width: 100% !important;
     text-align: center;
     margin-top: 20px;
@@ -279,5 +292,16 @@ a.waves-effect {
     width: 100% !important;
     text-align: center;
     margin-top: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .ExpertiseContent .left-side img,
+  .expertiseSteps .left-side img.expertiseStepsImage,
+  .expertisePreparation .left-side img.expertisePreparationImage,
+  .expertiseRisks .left-side img.expertiseDifferentTypesImage {
+    float: right;
+  }
+  .expertiseDifferentTypes .left-side img {
+    float: left;
   }
 }
