@@ -1,8 +1,8 @@
 import KneeReplacementSteps from "../../images/KneeReplacementSteps.jpg";
 export default function ExpertiseSteps() {
   return (
-    <div className="row expertiseDifferentTypes expertiseSteps">
-      <div className="col l10 offset-l1">
+    <div className="row expertiseDifferentTypes expertiseSteps  indigo lighten-5 shared-margin">
+      <div className="col l10 offset-l1 expertiseDifferentTypesMargin">
         <div className="col l6 right-side">
           <h6>
             <u>What are the steps to your knee replacement?</u>

@@ -244,17 +244,41 @@ a.waves-effect {
 .ExpertiseIntroduction .description ul li a i {
   padding-left: 10px;
 }
-.ExpertiseTargetAudience img,
+.ExpertiseTargetAudience .left-side .image-title {
+  position: relative;
+}
+.ExpertiseTargetAudience .left-side .image-title span {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 97px;
+  bottom: 16px;
+}
+
 .expertiseDifferentTypes img {
   width: 460px;
   height: 550px;
+}
+.ExpertiseTargetAudience .left-side img {
+  width: 450px;
+  height: 450px;
+}
+.ExpertiseTargetAudience .left-side {
+  display: flex;
+  flex-direction: column;
+}
+.ExpertiseTargetAudience img {
+  padding: 30px 30px 48px 30px;
 }
 .ExpertiseTargetAudience ul li,
 .expertisePreparation ul li {
   font-size: 18px;
 }
-.ExpertiseContent img,
-.ExpertiseTargetAudience img {
+.ExpertiseContent img {
+  padding: 30px;
+}
+.expertiseDifferentTypes .left-side img {
+  width: 380px;
+  height: 400px;
   padding: 30px;
 }
 .expertiseDifferentTypes .left-side,
@@ -276,14 +300,19 @@ a.waves-effect {
   font-size: 18px;
   margin-top: 30px;
 }
-.ExpertiseContent .Expertise-definition {
+.ExpertiseContent .Expertise-definition,
+.expertiseDifferentTypes .expertiseDifferentTypesMargin {
+  margin: 50px 0;
+}
+.shared-margin {
   margin: 50px 0;
 }
 
 @media (max-width: 1200px) {
   .ExpertiseContent .Expertise-definition .left-side,
   .expertiseDifferentTypes .left-side,
-  .expertiseDifferentTypes .right-side {
+  .expertiseDifferentTypes .right-side,
+  .ExpertiseTargetAudience .left-side {
     width: 100% !important;
     text-align: center;
     margin-top: 20px;
@@ -298,7 +327,8 @@ a.waves-effect {
   .ExpertiseContent .left-side img,
   .expertiseSteps .left-side img.expertiseStepsImage,
   .expertisePreparation .left-side img.expertisePreparationImage,
-  .expertiseRisks .left-side img.expertiseDifferentTypesImage {
+  .expertiseRisks .left-side img.expertiseDifferentTypesImage,
+  .ExpertiseTargetAudience .left-side img {
     float: right;
   }
   .expertiseDifferentTypes .left-side img {

@@ -1,10 +1,10 @@
-import KneeReplacemenetExpectation from "../../images/KneeReplacementExpectation.png";
+import BandagedPatientUsingWalker from "../../images/Knee/BandagedPatientUsingWalker.jpg";
 export default function ExpertiseExpectation() {
   return (
-    <div className="row expertiseDifferentTypes ">
-      <div className="col l10 offset-l1">
+    <div className="row expertiseDifferentTypes shared-margin indigo lighten-5">
+      <div className="col l10 offset-l1 expertiseDifferentTypesMargin">
         <div className="col l6 s12 left-side">
-          <img className="z-depth-1" src={KneeReplacemenetExpectation} alt="" />
+          <img className="z-depth-1" src={BandagedPatientUsingWalker} alt="" />
         </div>
         <div className="col l6 right-side">
           <h6>

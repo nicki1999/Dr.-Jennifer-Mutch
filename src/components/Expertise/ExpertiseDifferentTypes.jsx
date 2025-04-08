@@ -1,10 +1,11 @@
-import KneeReplacementTypes from "../../images/KneeReplacementTypes.jpg";
+import TotalKneeReplacement from "../../images/Knee/Bilateral Total Knee Pre-op.png";
 export default function ExpertiseDifferentTypes() {
   return (
-    <div className="row expertiseDifferentTypes">
+    <div className="row expertiseDifferentTypes shared-margin">
       <div className="col l10 offset-l1">
         <div className="col l6 left-side">
-          <img className="z-depth-1" src={KneeReplacementTypes} alt="" />
+          <img className="z-depth-1" src={TotalKneeReplacement} alt="" />
+          <img className="z-depth-1" src={TotalKneeReplacement} alt="" />
         </div>
         <div className="col l6 right-side">
           <h6>

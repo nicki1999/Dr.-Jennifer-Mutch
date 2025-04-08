@@ -1,7 +1,7 @@
-import KneeReplacementPreparation from "../../images/KneeReplacementPreparation.jpg";
+import KneePhysiotherapy from "../../images/Knee/KneePhysiotherapy.jpg";
 export default function ExpertisePreparation() {
   return (
-    <div className="row expertiseDifferentTypes expertisePreparation">
+    <div className="row expertiseDifferentTypes expertisePreparation shared-margin">
       <div className="col l10 offset-l1">
         <div className="col l6 right-side">
           <h6>
@@ -50,7 +50,7 @@ export default function ExpertisePreparation() {
         <div className="col l6 s12 left-side">
           <img
             className="z-depth-1 expertisePreparationImage"
-            src={KneeReplacementPreparation}
+            src={KneePhysiotherapy}
             alt=""
           />
         </div>

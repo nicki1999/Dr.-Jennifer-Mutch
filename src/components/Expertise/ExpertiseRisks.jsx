@@ -1,9 +1,9 @@
 import KneeReplacementRisks from "../../images/KneeReplacementRisks.jpg";
 export default function ExpertiseRisks() {
   return (
-    <div className="row expertiseDifferentTypes expertisePreparation expertiseRisks">
+    <div className="row expertiseDifferentTypes expertisePreparation expertiseRisks shared-margin">
       <div className="col l10 offset-l1">
-        <div className="col l6 right-side">
+        <div className="col s12 right-side">
           <h6>
             <u>What are the risks of knee replacement? </u>
           </h6>
@@ -18,13 +18,13 @@ export default function ExpertiseRisks() {
             Mutch.
           </p>
         </div>
-        <div className="col l6 s12 left-side">
+        {/* <div className="col l6 s12 left-side">
           <img
             className="z-depth-1 expertiseDifferentTypesImage"
             src={KneeReplacementRisks}
             alt=""
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
