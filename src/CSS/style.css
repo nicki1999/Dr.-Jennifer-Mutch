@@ -253,7 +253,11 @@ a.waves-effect {
   margin-left: 97px;
   bottom: 16px;
 }
-
+.expertiseDifferentTypes .expertiseDifferentTypesImageContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .expertiseDifferentTypes img {
   width: 460px;
   height: 550px;
