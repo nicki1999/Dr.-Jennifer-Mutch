@@ -1,11 +1,11 @@
-import UKAPreOp from "../../images/Knee/UKA Pre-op.png";
-import UKAPlanning from "../../images/Knee/UKA planning.png";
-import UKAPostOp from "../../images/Knee/UKA Post op 2.png";
+import UKAPreOp from "../../../images/Knee/UKA Pre-op.png";
+import UKAPlanning from "../../../images/Knee/UKA planning.png";
+import UKAPostOp from "../../../images/Knee/UKA Post op 2.png";
 
 export default function ExpertiseSteps() {
   return (
-    <div className="row expertiseDifferentTypes expertiseSteps  indigo lighten-5 shared-margin">
-      <div className="col l10 offset-l1 expertiseDifferentTypesMargin">
+    <div className="row KneeReplacementDifferentTypes expertiseSteps  indigo lighten-5 shared-margin">
+      <div className="col l10 offset-l1 KneeReplacementDifferentTypesMargin">
         <div className="col s12 right-side">
           <h6>
             <u>What are the steps to your knee replacement?</u>
@@ -28,21 +28,17 @@ export default function ExpertiseSteps() {
             </p>
             {/* <li>A – Pre-operative XR (Pic here) </li> */}
             <div class="row">
-              <div className="expertiseDifferentTypesImageContainer">
+              <div className="KneeReplacementDifferentTypesImageContainer">
                 <div class="col l4 m5 s12">
                   <div class="card">
                     <div class="card-image">
                       <img src={UKAPreOp} />
                       <span class="card-title">A – Pre-operative XR</span>
                     </div>
-                    {/* <div class="card-content">
-                      <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
-                      </p>
+                    <div class="card-content">
+                      <p>Imaging showing severe arthritis (joint wear)</p>
                     </div>
-                    <div class="card-action">
+                    {/* <div class="card-action">
                       <a href="#">This is a link</a>
                     </div> */}
                   </div>
@@ -53,14 +49,13 @@ export default function ExpertiseSteps() {
                       <img src={UKAPlanning} />
                       <span class="card-title">B – Operative Planning</span>
                     </div>
-                    {/* <div class="card-content">
+                    <div class="card-content">
                       <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
+                        Templating using specialized computer software to plan
+                        the proper implant type, size and position
                       </p>
                     </div>
-                    <div class="card-action">
+                    {/* <div class="card-action">
                       <a href="#">This is a link</a>
                     </div> */}
                   </div>
@@ -71,14 +66,10 @@ export default function ExpertiseSteps() {
                       <img src={UKAPostOp} />
                       <span class="card-title">C – Post-operative XR</span>
                     </div>
-                    {/* <div class="card-content">
-                      <p>
-                        I am a very simple card. I am good at containing small
-                        bits of information. I am convenient because I require
-                        little markup to use effectively.
-                      </p>
+                    <div class="card-content">
+                      <p>Imaging showing new implant position</p>
                     </div>
-                    <div class="card-action">
+                    {/* <div class="card-action">
                       <a href="#">This is a link</a>
                     </div> */}
                   </div>

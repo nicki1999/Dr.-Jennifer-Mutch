@@ -1,8 +1,8 @@
-import KneeReplacementDefinition from "../../images/KneeReplacementDefinition.jpg";
+import KneeReplacementDefinition from "../../../images/Knee/KneeReplacementDefinition.jpg";
 
-export default function ExpertiseContent() {
+export default function KneeReplacementContent() {
   return (
-    <div className="row ExpertiseContent  indigo lighten-5 shared-margin">
+    <div className="row KneeReplacementContent  indigo lighten-5 shared-margin">
       <div className="col l10 offset-l1 Expertise-definition">
         <div className="col l6 right-side">
           <h6>

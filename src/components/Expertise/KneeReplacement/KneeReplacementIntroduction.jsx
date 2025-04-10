@@ -1,7 +1,7 @@
-import KneeReplacementRealLife from "../../images/KneeReplacementRealLife.png";
-export default function ExpertiseIntroduction() {
+import KneeReplacementRealLife from "../../../images/Knee/KneeReplacementRealLife.png";
+export default function KneeReplacementIntroduction() {
   return (
-    <div className="row ExpertiseIntroduction">
+    <div className="row KneeReplacementIntroduction">
       <div className="">
         <img
           src={KneeReplacementRealLife}

@@ -1,8 +1,8 @@
-import BandagedPatientUsingWalker from "../../images/Knee/BandagedPatientUsingWalker.jpg";
-export default function ExpertiseExpectation() {
+import BandagedPatientUsingWalker from "../../../images/Knee/BandagedPatientUsingWalker.jpg";
+export default function KneeReplacementExpectation() {
   return (
-    <div className="row expertiseDifferentTypes shared-margin indigo lighten-5">
-      <div className="col l10 offset-l1 expertiseDifferentTypesMargin">
+    <div className="row KneeReplacementDifferentTypes shared-margin indigo lighten-5">
+      <div className="col l10 offset-l1 KneeReplacementDifferentTypesMargin">
         <div className="col l6 s12 left-side">
           <img className="z-depth-1" src={BandagedPatientUsingWalker} alt="" />
         </div>

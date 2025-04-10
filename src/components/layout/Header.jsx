@@ -44,13 +44,26 @@ export default function Header() {
         </div>
       </nav>
       <ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!" className="grey-text text-darken-3">Knee Replacement</a></li>
-  <li><a href="#!" className="grey-text text-darken-3">Hip Replacement</a></li>
-  <li class="divider"></li>
-  <li><a href="#!" className="grey-text text-darken-3">Shoulder Replacement</a></li>
-  <li><a href="#!" className="grey-text text-darken-3">Robotic-assisted Joint Replacement</a></li>
-
-</ul>
+        <li>
+          <Link to="/KneeReplacement">- Knee Replacement</Link>
+        </li>
+        <li>
+          <a href="#!" className="grey-text text-darken-3">
+            Hip Replacement
+          </a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="#!" className="grey-text text-darken-3">
+            Shoulder Replacement
+          </a>
+        </li>
+        <li>
+          <a href="#!" className="grey-text text-darken-3">
+            Robotic-assisted Joint Replacement
+          </a>
+        </li>
+      </ul>
       <nav className="white non-stick-navbar">
         <div className="nav-wrapper container">
           <a href="#" className="brand-logo">
@@ -61,9 +74,9 @@ export default function Header() {
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="home.html" className="black-text">
+              <Link to="/" className="black-text">
                 Home <span className="header-seperator">|</span>
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#about" className="black-text">
@@ -75,10 +88,15 @@ export default function Header() {
                 Surgeries <span className="header-seperator">|</span>
               </a>
             </li> */}
-                        <li>
-              <a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Surgeries
-               <i class="material-icons right">arrow_drop_down</i>
-               {/* <span className="header-seperator">|</span> */}
+            <li>
+              <a
+                class="dropdown-trigger black-text"
+                href="#!"
+                data-target="dropdown1"
+              >
+                Surgeries
+                <i class="material-icons right">arrow_drop_down</i>
+                {/* <span className="header-seperator">|</span> */}
               </a>
             </li>
             <li>
@@ -96,15 +114,14 @@ export default function Header() {
                 EN | FR{" "}
               </a>
             </li>
-
-
           </ul>
 
           <ul className="sidenav" id="mobile-demo">
+            <br />
             <li>
-              <a href="home.html" className="black-text">
+              <Link to="/" className="black-text">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#about" className="black-text">
@@ -116,10 +133,8 @@ export default function Header() {
                 Surgeries
               </a>
             </li>
-            <li className="surgeries-sub-category"> 
-              <a href="#expertise" className="black-text">
-                  - Knee Replacement
-              </a>
+            <li className="surgeries-sub-category">
+              <Link to="/KneeReplacement">- Knee Replacement</Link>
             </li>
             <li className="surgeries-sub-category">
               <a href="#expertise" className="black-text">

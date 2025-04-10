@@ -1,24 +1,24 @@
-import ExpertiseIntroduction from "./components/Expertise/ExpertiseIntroduction";
-import ExpertiseContent from "./components/Expertise/ExpertiseContent";
-import ExpertiseTargetAudience from "./components/Expertise/ExpertiseTargetAudience";
-import ExpertiseDifferentTypes from "./components/Expertise/ExpertiseDifferentTypes";
-import ExpertisePreparation from "./components/Expertise/ExpertisePreparation";
-import ExpertiseSteps from "./components/Expertise/ExpertiseSteps";
-import ExpertiseExpectation from "./components/Expertise/ExpertiseExpectation";
-import ExpertiseRisks from "./components/Expertise/ExpertiseRisks";
+import KneeReplacementIntroduction from "./components/Expertise/KneeReplacement//KneeReplacementIntroduction";
+import KneeReplacementContent from "./components/Expertise/KneeReplacement/KneeReplacementContent";
+import KneeReplacementTargetAudience from "./components/Expertise/KneeReplacement/KneeReplacementTargetAudience";
+import KneeReplacementDifferentTypes from "./components/Expertise/KneeReplacement/KneeReplacementDifferentTypes";
+import KneeReplacementPreparation from "./components/Expertise/KneeReplacement/KneeReplacementPreparation";
+import KneeReplacementSteps from "./components/Expertise/KneeReplacement/KneeReplacementSteps";
+import KneeReplacementExpectation from "./components/Expertise/KneeReplacement/KneeReplacementExpectation";
+import KneeReplacementRisks from "./components/Expertise/KneeReplacement/KneeReplacementRisks";
 export default function KneeReplacement() {
   return (
     <div>
-      <ExpertiseIntroduction></ExpertiseIntroduction>
-      <ExpertiseTargetAudience></ExpertiseTargetAudience>
-      <ExpertiseContent></ExpertiseContent>
-      <ExpertiseDifferentTypes></ExpertiseDifferentTypes>
+      <KneeReplacementIntroduction></KneeReplacementIntroduction>
+      <KneeReplacementTargetAudience></KneeReplacementTargetAudience>
+      <KneeReplacementContent></KneeReplacementContent>
+      <KneeReplacementDifferentTypes></KneeReplacementDifferentTypes>
       <br />
       <br />
-      <ExpertiseSteps></ExpertiseSteps>
-      <ExpertisePreparation></ExpertisePreparation>
-      <ExpertiseExpectation></ExpertiseExpectation>
-      <ExpertiseRisks></ExpertiseRisks>
+      <KneeReplacementSteps></KneeReplacementSteps>
+      <KneeReplacementPreparation></KneeReplacementPreparation>
+      <KneeReplacementExpectation></KneeReplacementExpectation>
+      <KneeReplacementRisks></KneeReplacementRisks>
     </div>
   );
 }

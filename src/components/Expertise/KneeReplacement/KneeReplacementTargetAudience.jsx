@@ -1,14 +1,14 @@
-import BilateralTotalKneePlanning from "../../images/Knee/Bilateral Total Knee Planning.png";
-import RidingBike from "../../images/Riding Bike.jpg";
-export default function ExpertiseTargetAudience() {
+import BilateralTotalKneePlanning from "../../../images/Knee/Bilateral Total Knee Planning.png";
+import RidingBike from "../../../images/Knee/Riding Bike.jpg";
+export default function KneeReplacementTargetAudience() {
   return (
-    <div className="row ExpertiseTargetAudience shared-margin">
+    <div className="row KneeReplacementTargetAudience shared-margin">
       <div className="col l10 offset-l1 Expertise-definition">
         {/* <div className="col l12 left-side">
           <img className="z-depth-1" src={KneeReplacementTargetAudience} alt="" />
         </div> */}
         <div className="col l6 s12 right-side ">
-          <h6 className="center">
+          <h6>
             <u>Who should get a knee replacement?</u>
           </h6>
           <p>
@@ -53,18 +53,18 @@ export default function ExpertiseTargetAudience() {
         <div className="col l6 s12 left-side">
           <div className="image-wrapper">
             <img
-              className="z-depth-1 expertiseTargetAudienceImage"
+              className="z-depth-1 KneeReplacementTargetAudienceImage"
               src={BilateralTotalKneePlanning}
               alt="Bilateral Total Knee Planning"
             />
           </div>
-          <div className="image-wrapper" style={{ marginTop: "20px" }}>
+          {/* <div className="image-wrapper" style={{ marginTop: "20px" }}>
             <img
-              className="z-depth-1 expertiseTargetAudienceImage"
+              className="z-depth-1 KneeReplacementTargetAudienceImage"
               src={RidingBike}
               alt="Riding Bike"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

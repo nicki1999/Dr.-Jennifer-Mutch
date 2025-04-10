@@ -1,7 +1,7 @@
-import KneeReplacementRisks from "../../images/KneeReplacementRisks.jpg";
+import KneeReplacementRisks from "../../../images/Knee/KneeReplacementRisks.jpg";
 export default function ExpertiseRisks() {
   return (
-    <div className="row expertiseDifferentTypes expertisePreparation expertiseRisks shared-margin">
+    <div className="row KneeReplacementDifferentTypes KneeReplacementPreparation expertiseRisks shared-margin">
       <div className="col l10 offset-l1">
         <div className="col s12 right-side">
           <h6>
@@ -20,7 +20,7 @@ export default function ExpertiseRisks() {
         </div>
         {/* <div className="col l6 s12 left-side">
           <img
-            className="z-depth-1 expertiseDifferentTypesImage"
+            className="z-depth-1 KneeReplacementDifferentTypesImage"
             src={KneeReplacementRisks}
             alt=""
           />
