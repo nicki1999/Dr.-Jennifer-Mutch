@@ -8,6 +8,7 @@ export default function Form() {
   const [inputEmail, setInputEmail] = useState("");
   const [inputPhone, setInputPhone] = useState("");
   const [userInsuranceType, setUserInsuranceType] = useState("");
+  const [userProcedureType, setUserProcedureType] = useState("");
   const [userFile, setUserFile] = useState(null);
 
   const handleFileChange = (e) => {
@@ -28,6 +29,7 @@ export default function Form() {
       !inputEmail ||
       !inputPhone ||
       !userInsuranceType ||
+      !userProcedureType ||
       !userFile
     ) {
       alert("Please fill out all fields and select a file.");
@@ -46,6 +48,7 @@ export default function Form() {
         userPhone: inputPhone,
         userInsuranceType: userInsuranceType,
         imageAttachment: base64String, // Base64 string of the file
+        userProcedureType: userProcedureType,
       };
 
       // Send the email with the form data and the image attachment
@@ -162,6 +165,22 @@ export default function Form() {
                 <option value="3">Option 3</option>
               </select>
               <label>Please select your insurance type</label>
+            </div>
+            <div className="input-field col s12">
+              <select
+                name="userProcedureType"
+                id="procedureType"
+                value={userProcedureType}
+                onChange={(e) => setUserProcedureType(e.target.value)}
+              >
+                <option value="" disabled selected>
+                  Choose your option
+                </option>
+                <option value="1">Knee Procedure</option>
+                <option value="2">Hip Procedure</option>
+                <option value="3">Shoulder Procedure</option>
+              </select>
+              <label>Please select your procedure type</label>
             </div>
 
             <div className="file-field input-field">
