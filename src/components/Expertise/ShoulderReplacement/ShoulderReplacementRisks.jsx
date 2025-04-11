@@ -2,13 +2,11 @@ import KneeReplacementRisks from "../../../images/Knee/KneeReplacementRisks.jpg"
 export default function ShoulderReplacementRisks() {
   return (
     <div
-      className="row KneeReplacementDifferentTypes KneeReplacementPreparation expertiseRisks shared-margin indigo lighten-5"
+      className="row KneeReplacementDifferentTypes KneeReplacementPreparation expertiseRisks shared-margin"
       style={{ marginBottom: 0 }}
     >
       <div className="col l10 offset-l1">
         <div className="col s12 right-side">
-          <br />
-          <br />
           <h6>
             <u>What are the risks of shoulder replacement? </u>
           </h6>

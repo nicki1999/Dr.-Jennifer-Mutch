@@ -35,12 +35,12 @@ export default function ShoulderReplacementIntroduction() {
                 different types of shoulder replacements?
               </a>
             </li>
-            {/* <li>
+            <li>
               <a href="">
                 <i className="material-icons">link</i> &nbsp; What are the steps
-                to your knee replacement?
+                to your shoulder replacement?
               </a>
-            </li> */}
+            </li>
             <li>
               <a href="">
                 <i className="material-icons">link</i> &nbsp; How can I prepare

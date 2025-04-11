@@ -2,7 +2,7 @@ import KneePhysiotherapy from "../../../images/Knee/KneePhysiotherapy.jpg";
 import RidingBike from "../../../images/Knee/Riding Bike.jpg";
 export default function ShoulderReplacementPreparation() {
   return (
-    <div className="row KneeReplacementDifferentTypes KneeReplacementPreparation shared-margin indigo lighten-5">
+    <div className="row KneeReplacementDifferentTypes KneeReplacementPreparation shared-margin">
       <div className="col l10 offset-l1">
         <div className="col l6 right-side">
           <br />

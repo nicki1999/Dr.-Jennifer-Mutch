@@ -48,9 +48,7 @@ export default function Header() {
           <Link to="/KneeReplacement">- Knee Replacement</Link>
         </li>
         <li>
-          <a href="#!" className="grey-text text-darken-3">
-            Hip Replacement
-          </a>
+          <Link to="/HipReplacement">- Hip Replacement</Link>
         </li>
         <li class="divider"></li>
         <li>
@@ -135,9 +133,7 @@ export default function Header() {
               <Link to="/KneeReplacement">- Knee Replacement</Link>
             </li>
             <li className="surgeries-sub-category">
-              <a href="#expertise" className="black-text">
-                - Hip Replacement
-              </a>
+              <Link to="/HipReplacement">- Hip Replacement</Link>
             </li>
             <li className="surgeries-sub-category">
               <Link to="/ShoulderReplacement">- Shoulder Replacement</Link>

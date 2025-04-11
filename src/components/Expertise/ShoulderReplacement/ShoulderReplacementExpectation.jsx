@@ -1,7 +1,7 @@
 import BandagedShoulder from "../../../images/Shoulder/BandagedShoulder.jpg";
 export default function KneeReplacementExpectation() {
   return (
-    <div className="row KneeReplacementDifferentTypes shared-margin">
+    <div className="row KneeReplacementDifferentTypes shared-margin indigo lighten-5">
       <div className="col l10 offset-l1 KneeReplacementDifferentTypesMargin">
         <div className="col l6 s12 left-side">
           <img className="z-depth-1" src={BandagedShoulder} alt="" />
