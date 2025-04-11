@@ -54,9 +54,7 @@ export default function Header() {
         </li>
         <li class="divider"></li>
         <li>
-          <a href="#!" className="grey-text text-darken-3">
-            Shoulder Replacement
-          </a>
+          <Link to="/ShoulderReplacement">- Shoulder Replacement</Link>
         </li>
         <li>
           <a href="#!" className="grey-text text-darken-3">
@@ -142,9 +140,7 @@ export default function Header() {
               </a>
             </li>
             <li className="surgeries-sub-category">
-              <a href="#expertise" className="black-text">
-                - Shoulder Replacement
-              </a>
+              <Link to="/ShoulderReplacement">- Shoulder Replacement</Link>
             </li>
             <li className="surgeries-sub-category">
               <a href="#expertise" className="black-text">

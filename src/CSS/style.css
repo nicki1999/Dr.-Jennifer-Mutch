@@ -289,6 +289,9 @@ a.waves-effect {
 .KneeReplacementContent img {
   padding: 30px;
 }
+.KneeReplacementContent .ShoulderReplacementContentImage {
+  width: 300px;
+}
 .KneeReplacementDifferentTypes .left-side img {
   width: 380px;
   height: 400px;
@@ -322,6 +325,9 @@ a.waves-effect {
 }
 
 @media (max-width: 1200px) {
+  .KneeReplacementTargetAudience .right-side h6 {
+    text-align: center;
+  }
   .KneeReplacementContent .Expertise-definition .left-side,
   .KneeReplacementDifferentTypes .left-side,
   .KneeReplacementDifferentTypes .right-side,
