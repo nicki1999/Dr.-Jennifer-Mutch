@@ -12,7 +12,7 @@ export default function Header() {
   }, []);
   return (
     <div>
-      <nav className="indigo stick-navbar">
+      <nav className="backgroundColor stick-navbar">
         <div className="nav-wrapper container">
           <ul id="" className="right">
             <li>

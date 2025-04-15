@@ -1,10 +1,10 @@
-import KneeReplacementRealLife from "../../../images/Knee/KneeReplacementRealLife.png";
+import HipReplacementRealLife from "../../../images/Hip/HipReplacementRealLife.png";
 export default function HipReplacementIntroduction() {
   return (
     <div className="row KneeReplacementIntroduction">
       <div className="">
         <img
-          src={KneeReplacementRealLife}
+          src={HipReplacementRealLife}
           className="KneeReplacementRealLife"
           alt=""
         />

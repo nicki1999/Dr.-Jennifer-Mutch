@@ -1,8 +1,14 @@
 import jenniferMutch from "../../images/JenniferMutch.png";
+import IntroductionBackground from "../../images/IntroductionBackground.png";
 export default function Introduction() {
   return (
     <div className="row introduction">
       <div className="container">
+        {/* <img
+          src={IntroductionBackground}
+          alt=""
+          className="IntroductionBackground"
+        /> */}
         <div className="col s12 l6 white-text left leftSection">
           <h1 className="white-text">
             <b>Dr. Jennifer Mutch</b>

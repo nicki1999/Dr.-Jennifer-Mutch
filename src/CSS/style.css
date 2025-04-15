@@ -2,6 +2,9 @@ body {
   background-color: white !important;
   overflow-x: hidden;
 }
+.backgroundColor {
+  background-color: #0047ab !important;
+}
 .logo {
   height: 64px;
 }
@@ -19,6 +22,8 @@ nav.stick-navbar {
   z-index: 1000;
   margin-top: -60px;
 }
+.IntroductionBackground {
+}
 
 nav.stick-navbar .book-appointment a {
   height: 45px !important;
@@ -33,6 +38,14 @@ nav.stick-navbar ul li a {
   display: flex;
   align-items: center;
   white-space: nowrap; /* Prevent wrapping */
+}
+.introduction {
+  background-image: url("../images/IntroductionBackground.png"); /* use a valid URL or import path */
+  background-size: cover; /* stretch to fill, preserving aspect ratio */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+  position: relative; /* required if you want to position child elements absolutely */
+  padding: 4rem 2rem;
 }
 .introduction .rightSection {
   width: 100%;
