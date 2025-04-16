@@ -8,6 +8,7 @@ import "./CSS/style.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ShoulderReplacement from "./ShoulderReplacement";
 import HipReplacement from "./HipReplacement";
+import About from "./About";
 import RoboticAssistedJointReplacement from "./components/RoboticAssistedJointReplacement";
 
 //use NavLink for navigation
@@ -25,6 +26,7 @@ root.render(
           path="/RoboticAssistedJointReplacement"
           element={<RoboticAssistedJointReplacement />}
         />
+        <Route path="/About" element={<About />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

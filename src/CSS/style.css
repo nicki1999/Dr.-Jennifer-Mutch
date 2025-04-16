@@ -104,6 +104,21 @@ a.waves-effect {
 .about .icon-holders .aboutCard {
   margin-top: 60px;
 }
+.aboutDetailed {
+  background-image: url("../images/IntroductionBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.aboutDetailed .left-side {
+  text-align: left !important;
+}
+.aboutDetailed .fullWidthAbout {
+  width: 100%;
+  text-align: left;
+  margin-top: 100px;
+}
 .experties .card-holders {
   margin-left: auto;
   margin-right: auto;
@@ -111,8 +126,32 @@ a.waves-effect {
 .experties {
   padding-bottom: 60px;
 }
+.carousel .indicators {
+  display: none !important;
+}
 .cardWithTitle {
   margin-top: 80px !important;
+}
+.AffiliationCarousel {
+  padding: 50px;
+}
+.AffiliationCarousel h5 {
+  font-size: 45px;
+}
+.AffiliationCarousel .carousel .carousel-item {
+  width: 235px;
+  height: 222px;
+}
+.AffiliationCarousel .rateMDImageContainer {
+  width: 100%;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AffiliationCarousel .rateMDImageContainer img {
+  width: 200px;
 }
 .cardWithTitle .card-title {
   top: -80px !important;
