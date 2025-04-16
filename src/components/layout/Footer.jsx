@@ -66,7 +66,7 @@ export default function Footer() {
           <div className="contactUs">
             <br />
             <h4 className="center">
-              <u>Private Clinics</u>
+              <u>Private Clinic</u>
             </h4>
             <ul>
               {/* <li style={{ marginTop: "20px" }}>
@@ -125,7 +125,7 @@ export default function Footer() {
           <div className="contactUs">
             <br />
             <h4 className="center">
-              <u>Public Clinic</u>
+              <u>Public Clinics</u>
             </h4>
             <ul>
               {/* <li style={{ marginTop: "20px" }}>

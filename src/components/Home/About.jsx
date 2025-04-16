@@ -3,10 +3,10 @@ import { useEffect } from "react";
 import AboutDrJenniferMutch from "../../images/AboutJenniferMutch.png";
 export default function About() {
   return (
-    <div className="row about" id="about">
+    <div className="row about indigo lighten-4 shared-padding" id="about">
       <div className="center">
-        <div className="col s10 offset-s1 ">
-          <div className="col l6 S12 offset-l1">
+        <div className="col s10 offset-s1">
+          <div className="col l6 S12 offset-l1 ">
             <h2 className="center">
               <u>About Dr. Mutch</u>
             </h2>

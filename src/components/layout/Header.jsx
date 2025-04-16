@@ -55,9 +55,9 @@ export default function Header() {
           <Link to="/ShoulderReplacement">- Shoulder Replacement</Link>
         </li>
         <li>
-          <a href="#!" className="grey-text text-darken-3">
-            Robotic-assisted Joint Replacement
-          </a>
+          <Link to="/RoboticAssistedJointReplacement">
+            - Robotic-assisted Joint Replacement
+          </Link>
         </li>
       </ul>
       <nav className="white non-stick-navbar">
@@ -139,9 +139,9 @@ export default function Header() {
               <Link to="/ShoulderReplacement">- Shoulder Replacement</Link>
             </li>
             <li className="surgeries-sub-category">
-              <a href="#expertise" className="black-text">
+              <Link to="/RoboticAssistedJointReplacement">
                 - Robotic-assisted Joint Replacement
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#articles" className="black-text">

@@ -16,15 +16,15 @@ export default function HipReplacementSteps() {
               Once it has been determined that surgery is needed for your
               painful hip you will undergo an evaluation and discussion with Dr
               Mutch regarding the best surgery for your needs. Things that will
-              be considered are your health, activity level, location of pain
-              and pattern of arthritis on XR.{" "}
+              be considered are your health, activity level, age and pattern of
+              arthritis on XR.
             </p>
             <li>2. Special XR and Surgical Planning </li>
             <p>
-              Special calibrated XRs will be taken of your entire hip and will
-              be used to precisely plan your surgery. Proper planning allows for
-              appropriate implant selection, position and sizing and helps
-              ensure a smooth operation on the day of your surgery.
+              Special calibrated XRs will be taken of your pelvis and hip and
+              will be used to precisely plan your surgery. Proper planning
+              allows for appropriate implant selection, position and sizing and
+              helps ensure a smooth operation on the day of your surgery.
             </p>
             {/* <li>A – Pre-operative XR (Pic here) </li> */}
             <div class="row">

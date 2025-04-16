@@ -10,6 +10,7 @@ export default function Form() {
   const [userInsuranceType, setUserInsuranceType] = useState("");
   const [userProcedureType, setUserProcedureType] = useState("");
   const [userFile, setUserFile] = useState(null);
+  const [userMessage, setUserMessage] = useState("");
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -49,6 +50,7 @@ export default function Form() {
         userInsuranceType: userInsuranceType,
         imageAttachment: base64String, // Base64 string of the file
         userProcedureType: userProcedureType,
+        userMessage: userMessage,
       };
 
       // Send the email with the form data and the image attachment
@@ -160,9 +162,9 @@ export default function Form() {
                 <option value="" disabled selected>
                   Choose your option
                 </option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">Quebec Insurance</option>
+                <option value="2">Public Insurance</option>
+                <option value="3">Other...</option>
               </select>
               <label>Please select your insurance type</label>
             </div>
@@ -176,9 +178,9 @@ export default function Form() {
                 <option value="" disabled selected>
                   Choose your option
                 </option>
-                <option value="1">Knee Procedure</option>
-                <option value="2">Hip Procedure</option>
-                <option value="3">Shoulder Procedure</option>
+                <option value="1">Knee Replacement (Partial or Total)</option>
+                <option value="2">Hip Procedure (Partial or Total)</option>
+                <option value="3">Shoulder Procedure (Reverse or Total)</option>
               </select>
               <label>Please select your procedure type</label>
             </div>
@@ -203,7 +205,17 @@ export default function Form() {
                 />
               </div>
             </div>
-
+            <div class="input-field col s12">
+              <textarea
+                id="textarea2"
+                class="materialize-textarea"
+                data-length="120"
+                name="userMessage"
+                value={userMessage}
+                onChange={(e) => setUserMessage(e.target.value)}
+              ></textarea>
+              <label for="textarea2">Write your message here...</label>
+            </div>
             <button
               className="btn waves-effect waves-light"
               type="submit"

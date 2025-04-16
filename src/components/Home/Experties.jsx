@@ -6,7 +6,7 @@ import RoboticSurgery from "../../images/RoboticSurgery.png";
 import ExpertiesCard from "./miniSections/ExpertiesCard";
 export default function Experties() {
   return (
-    <div className="row experties indigo lighten-4" id="expertise">
+    <div className="row experties" id="expertise">
       <div className="col s10 offset-s1">
         <h2 className="center">
           <u>Surgeries</u>

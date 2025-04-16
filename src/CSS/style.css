@@ -54,6 +54,7 @@ nav.stick-navbar ul li a {
 .footer {
   background-color: #0047ab;
   padding: 40px 0;
+  margin-bottom: 0 !important;
 }
 .introduction h5 {
   margin-top: -20px;
@@ -103,35 +104,43 @@ a.waves-effect {
 .about .icon-holders .aboutCard {
   margin-top: 60px;
 }
-.experties .card-holders {
+.card-holders {
   margin-left: auto;
   margin-right: auto;
 }
 .experties {
   padding-bottom: 60px;
 }
-.experties .card .card-image img {
+.card .card-image img {
   padding: 30px;
-  width: 300px;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
-.articles .card-holders .title-container {
+.card-holders .title-container {
   width: 100%;
   height: 80px;
 }
-.articles .card-holders .card-title {
+.card-holders .card-title {
   font-size: 20px;
 }
-.articles .card-holders .card-content p {
+
+.RoboticAssistedJointReplacementContentCardHolders {
+  align-content: start;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.card-holders .card-content p {
   display: -webkit-box;
   -webkit-line-clamp: 3; /* Limit to 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.articles .card-holders .card-image img {
+.card-holders .card-image img {
   height: 350px;
 }
 .footer ul li a {
@@ -191,7 +200,7 @@ a.waves-effect {
     margin: 100px 0;
     width: 350px;
   }
-  .about .icon-holders .aboutCard {
+  .icon-holders .aboutCard {
     float: none;
     margin-top: 100px;
   }
@@ -336,7 +345,12 @@ a.waves-effect {
 .shared-margin {
   margin: 50px 0;
 }
-
+.shared-padding {
+  padding: 50px 0;
+}
+.RoboticAssistedSurgeryImage {
+  width: 500px;
+}
 @media (max-width: 1200px) {
   .KneeReplacementTargetAudience .right-side h6 {
     text-align: center;

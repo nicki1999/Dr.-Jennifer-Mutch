@@ -8,6 +8,7 @@ import "./CSS/style.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ShoulderReplacement from "./ShoulderReplacement";
 import HipReplacement from "./HipReplacement";
+import RoboticAssistedJointReplacement from "./components/RoboticAssistedJointReplacement";
 
 //use NavLink for navigation
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -20,6 +21,10 @@ root.render(
         <Route path="/KneeReplacement" element={<KneeReplacement />} />
         <Route path="/ShoulderReplacement" element={<ShoulderReplacement />} />
         <Route path="/HipReplacement" element={<HipReplacement />} />
+        <Route
+          path="/RoboticAssistedJointReplacement"
+          element={<RoboticAssistedJointReplacement />}
+        />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

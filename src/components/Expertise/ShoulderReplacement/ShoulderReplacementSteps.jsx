@@ -16,15 +16,17 @@ export default function ShoulderReplacementSteps() {
               Once it has been determined that surgery is needed for your
               painful shoulder you will undergo an evaluation and discussion
               with Dr Mutch regarding the best surgery for your needs. Things
-              that will be considered are your health, activity level, location
-              of pain and pattern of arthritis on XR.{" "}
+              that will be considered are your health, activity level, presence
+              of any shoulder muscle tears and pattern of arthritis on XR.
             </p>
-            <li>2. Special XR and Surgical Planning </li>
+            <li>2. Special CT and Surgical Planning </li>
             <p>
-              Special calibrated XRs will be taken of your entire leg and will
-              be used to precisely plan your surgery. Proper planning allows for
-              appropriate implant selection, position and sizing and helps
-              ensure a smooth operation on the day of your surgery.
+              A special test called a CT scan (computed tomography) will be
+              taken of your shoulder and will be used to precisely plan your
+              surgery. This imaging allows for 3D visualization and planning of
+              your shoulder procedure. Proper planning allows for appropriate
+              implant selection, position and sizing and helps ensure a smooth
+              operation on the day of your surgery.
             </p>
             {/* <li>A – Pre-operative XR (Pic here) </li> */}
             <div class="row">
@@ -33,7 +35,7 @@ export default function ShoulderReplacementSteps() {
                   <div class="card">
                     <div class="card-image">
                       <img src={ShoulderPreOp} />
-                      <span class="card-title">A – Pre-operative XR</span>
+                      <span class="card-title">A – Pre-operative XR + CT</span>
                     </div>
                     <div class="card-content">
                       <p>Imaging showing severe arthritis (joint wear)</p>
