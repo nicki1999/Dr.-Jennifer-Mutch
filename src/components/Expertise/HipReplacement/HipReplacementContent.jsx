@@ -1,5 +1,6 @@
 import KneeReplacementDefinition from "../../../images/Knee/KneeReplacementDefinition.jpg";
-import HipOA from "../../../images/Hip/Hip-OA.png";
+import HipOAPlanning from "../../../images/Hip/Hip-OA-Planning.png";
+
 export default function HipReplacementContent() {
   return (
     <div className="row KneeReplacementContent  indigo lighten-5 shared-margin">
@@ -20,8 +21,8 @@ export default function HipReplacementContent() {
         </div>
         <div className="col l6 left-side ">
           <img
-            className="z-depth-1 ShoulderReplacementContentImage"
-            src={HipOA}
+            className="z-depth-1 HipReplacementContentImage"
+            src={HipOAPlanning}
             alt=""
           />
         </div>

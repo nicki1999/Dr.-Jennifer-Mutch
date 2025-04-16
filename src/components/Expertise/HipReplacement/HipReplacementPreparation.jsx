@@ -54,7 +54,7 @@ export default function HipReplacementPreparation() {
         </div>
         <div className="col l6 s12 left-side">
           <img
-            className="z-depth-1 KneeReplacementPreparationImage"
+            className="z-depth-1 KneeReplacementPreparationImage HipReplacementPreparationImage"
             src={RidingBike}
             alt=""
           />

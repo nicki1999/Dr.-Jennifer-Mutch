@@ -1,4 +1,5 @@
 import JkPlanningAxial from "../../../images/Shoulder/JK - Planning Axial.png";
+import JKPreop from "../../../images/Shoulder/JK-Preop.png";
 export default function ShoulderReplacementTargetAudience() {
   return (
     <div className="row KneeReplacementTargetAudience shared-margin">
@@ -25,15 +26,7 @@ export default function ShoulderReplacementTargetAudience() {
               <li>- Inflammatory arthritis</li>
               <li>- Avascular necrosis (dead bone)</li>
               <li>- Injury (old or new) </li>
-            </ul>
-            Many conditions can lead to cartilage injury in your knee and these
-            including the following: <br />
-            <ul>
-              <li>- Osteoarthritis</li>
-              <li>- Inflammatory arthritis</li>
-              <li>- Avascular necrosis (dead bone)</li>
-              <li>- Injury (old or new)</li>
-              <li>- Prior surgery</li>
+              <li>- Prior surgery </li>
             </ul>
             Common conditions leading to tendon tears include: <br />
             <ul>
@@ -65,7 +58,7 @@ export default function ShoulderReplacementTargetAudience() {
           <div className="image-wrapper">
             <img
               className="z-depth-1 KneeReplacementTargetAudienceImage"
-              src={JkPlanningAxial}
+              src={JKPreop}
               alt="Bilateral Total Knee Planning"
             />
           </div>

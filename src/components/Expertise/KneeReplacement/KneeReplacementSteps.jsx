@@ -30,10 +30,10 @@ export default function ExpertiseSteps() {
             <div class="row">
               <div className="KneeReplacementDifferentTypesImageContainer">
                 <div class="col l4 m5 s12">
-                  <div class="card">
+                  <div class="card cardWithTitle">
                     <div class="card-image">
                       <img src={UKAPreOp} />
-                      <span class="card-title">A – Pre-operative XR</span>
+                      <div class="card-title">A – Pre-operative XR</div>
                     </div>
                     <div class="card-content">
                       <p>Imaging showing severe arthritis (joint wear)</p>
@@ -44,7 +44,7 @@ export default function ExpertiseSteps() {
                   </div>
                 </div>
                 <div class="col l4 m5 s12">
-                  <div class="card">
+                  <div class="card cardWithTitle">
                     <div class="card-image">
                       <img src={UKAPlanning} />
                       <span class="card-title">B – Operative Planning</span>
@@ -61,7 +61,7 @@ export default function ExpertiseSteps() {
                   </div>
                 </div>
                 <div class="col l4 m5 s12">
-                  <div class="card">
+                  <div class="card cardWithTitle">
                     <div class="card-image">
                       <img src={UKAPostOp} />
                       <span class="card-title">C – Post-operative XR</span>

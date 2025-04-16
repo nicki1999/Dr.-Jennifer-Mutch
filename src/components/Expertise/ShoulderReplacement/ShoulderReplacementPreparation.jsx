@@ -1,5 +1,6 @@
 import KneePhysiotherapy from "../../../images/Knee/KneePhysiotherapy.jpg";
-import RidingBike from "../../../images/Knee/Riding Bike.jpg";
+import PersonWalkingInPool from "../../../images/Shoulder/PersonWalkingInPool.jpg";
+
 export default function ShoulderReplacementPreparation() {
   return (
     <div className="row KneeReplacementDifferentTypes KneeReplacementPreparation shared-margin">
@@ -55,7 +56,7 @@ export default function ShoulderReplacementPreparation() {
         <div className="col l6 s12 left-side">
           <img
             className="z-depth-1 KneeReplacementPreparationImage"
-            src={RidingBike}
+            src={PersonWalkingInPool}
             alt=""
           />
         </div>

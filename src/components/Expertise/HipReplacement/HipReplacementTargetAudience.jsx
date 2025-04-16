@@ -1,4 +1,5 @@
-import HipOAPlanning from "../../../images/Hip/Hip-OA-Planning.png";
+import HipOA from "../../../images/Hip/Hip-OA.png";
+
 export default function HipReplacementTargetAudience() {
   return (
     <div className="row KneeReplacementTargetAudience shared-margin">
@@ -49,7 +50,7 @@ export default function HipReplacementTargetAudience() {
           <div className="image-wrapper">
             <img
               className="z-depth-1 KneeReplacementTargetAudienceImage"
-              src={HipOAPlanning}
+              src={HipOA}
               alt="HipOAPlanning"
             />
           </div>

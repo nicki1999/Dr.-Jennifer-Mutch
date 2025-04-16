@@ -1,10 +1,15 @@
 import BandagedHip from "../../../images/Hip/BandagedHip.jpg";
+import PhysiotherapyWalkingPatientWithWalker from "../../../images/Hip/PhysiotherapyWalkingPatientWithWalker.jpg";
 export default function HipReplacementExpectation() {
   return (
     <div className="row KneeReplacementDifferentTypes shared-margin indigo lighten-5">
       <div className="col l10 offset-l1 KneeReplacementDifferentTypesMargin">
         <div className="col l6 s12 left-side">
-          <img className="z-depth-1" src={BandagedHip} alt="" />
+          <img
+            className="z-depth-1"
+            src={PhysiotherapyWalkingPatientWithWalker}
+            alt=""
+          />
         </div>
         <div className="col l6 right-side">
           <h6>
