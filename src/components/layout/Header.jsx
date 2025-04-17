@@ -8,7 +8,10 @@ export default function Header() {
     let elems = document.querySelectorAll(".sidenav");
     M.Sidenav.init(elems);
     let dropdownElems = document.querySelectorAll(".dropdown-trigger");
-    M.Dropdown.init(dropdownElems);
+    M.Dropdown.init(dropdownElems, {
+      constrainWidth: false,
+      coverTrigger: false,
+    });
   }, []);
   return (
     <div>
@@ -43,20 +46,41 @@ export default function Header() {
           </ul>
         </div>
       </nav>
-      <ul id="dropdown1" class="dropdown-content">
+      <ul id="dropdown1" class="dropdown-content indigo-text">
         <li>
-          <Link to="/KneeReplacement">- Knee Replacement</Link>
+          <Link to="/KneeReplacement" className="indigo-text">
+            Knee Replacement
+          </Link>
         </li>
         <li>
-          <Link to="/HipReplacement">- Hip Replacement</Link>
+          <Link to="/HipReplacement" className="indigo-text">
+            {" "}
+            Hip Replacement
+          </Link>
         </li>
-        <li class="divider"></li>
         <li>
-          <Link to="/ShoulderReplacement">- Shoulder Replacement</Link>
+          <Link to="/ShoulderReplacement" className="indigo-text">
+            {" "}
+            Shoulder Replacement
+          </Link>
         </li>
         <li>
-          <Link to="/RoboticAssistedJointReplacement">
-            - Robotic-assisted Joint Replacement
+          <Link to="/RoboticAssistedJointReplacement" className="indigo-text">
+            Robotic-assisted Joint Replacement
+          </Link>
+        </li>
+      </ul>
+      <ul id="dropdown2" class="dropdown-content">
+        <li>
+          <Link to="/About" className="indigo-text">
+            {" "}
+            About Dr. Mutch
+          </Link>
+        </li>
+        <li>
+          <Link to="/Clinics" className="indigo-text">
+            {" "}
+            Clinics
           </Link>
         </li>
       </ul>
@@ -74,9 +98,20 @@ export default function Header() {
                 Home <span className="header-seperator">|</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a href="#about" className="black-text">
                 About <span className="header-seperator">|</span>
+              </a>
+            </li> */}
+            <li>
+              <a
+                class="dropdown-trigger black-text"
+                href="#!"
+                data-target="dropdown2"
+              >
+                About
+                <i class="material-icons right">arrow_drop_down</i>
+                {/* <span className="header-seperator">|</span> */}
               </a>
             </li>
             {/* <li>
@@ -119,10 +154,11 @@ export default function Header() {
                 Home
               </Link>
             </li>
-            <li>
-              <a href="#about" className="black-text">
-                About
-              </a>
+            <li className="surgeries-sub-category">
+              <Link to="/About"> - About Dr. Mutch</Link>
+            </li>
+            <li className="surgeries-sub-category">
+              <Link to="/Clinics"> - Clinics</Link>
             </li>
             <li>
               <a href="#expertise" className="black-text">

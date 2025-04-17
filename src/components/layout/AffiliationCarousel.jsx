@@ -31,7 +31,7 @@ export default function AffiliationCarousel() {
           <u>Affiliations</u>
         </b>
       </h5>
-      <div class="carousel">
+      <div class="carousel carousel2">
         <a class="carousel-item" href="#one!">
           <img src={McgillUniversityLogo} />
         </a>

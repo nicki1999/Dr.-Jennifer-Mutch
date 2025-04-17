@@ -47,6 +47,36 @@ nav.stick-navbar ul li a {
   position: relative; /* required if you want to position child elements absolutely */
   padding: 4rem 2rem;
 }
+#WestmountsquareCarousel > div:nth-of-type(2) {
+  background-image: url("../images/Westmountsquare/WestmountsquareLobby.jpg");
+  background-size: 100% 100%; /* <-- Makes the image fill the div */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#WestmountsquareCarousel > div:nth-of-type(3) {
+  background-image: url("../images/Westmountsquare/WestmountsquareLobby2.jpg");
+  background-size: 100% 100%; /* <-- Makes the image fill the div */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#WestmountsquareCarousel > div:nth-of-type(4) {
+  background-image: url("../images/Westmountsquare/WestmountsquareLobby3.jpeg");
+  background-size: 100% 100%; /* <-- Makes the image fill the div */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#WestmountsquareCarousel > div:nth-of-type(5) {
+  background-image: url("../images/Westmountsquare/WestmountsquareHallway.jpeg");
+  background-size: 100% 100%; /* <-- Makes the image fill the div */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#stMaryCarousel > div:nth-of-type(2) {
+  background-image: url("../images/StMaryHospital/stMaryBuilding.jpg");
+  background-size: 100% 100%; /* <-- Makes the image fill the div */
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .introduction .rightSection {
   width: 100%;
 }
@@ -56,8 +86,14 @@ nav.stick-navbar ul li a {
   padding: 40px 0;
   margin-bottom: 0 !important;
 }
+.card .card-image img {
+  padding-top: 10px;
+}
 .introduction h5 {
   margin-top: -20px;
+}
+span.card-title {
+  font-size: 16px !important;
 }
 .introduction span,
 ul {
@@ -126,7 +162,7 @@ a.waves-effect {
 .experties {
   padding-bottom: 60px;
 }
-.carousel .indicators {
+.carousel2 .indicators {
   display: none !important;
 }
 .cardWithTitle {

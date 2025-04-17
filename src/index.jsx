@@ -10,6 +10,7 @@ import ShoulderReplacement from "./ShoulderReplacement";
 import HipReplacement from "./HipReplacement";
 import About from "./About";
 import RoboticAssistedJointReplacement from "./components/RoboticAssistedJointReplacement";
+import Clinics from "./Clinics";
 
 //use NavLink for navigation
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -27,6 +28,7 @@ root.render(
           element={<RoboticAssistedJointReplacement />}
         />
         <Route path="/About" element={<About />} />
+        <Route path="/Clinics" element={<Clinics />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

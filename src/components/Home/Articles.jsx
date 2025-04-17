@@ -1,6 +1,7 @@
 import ArticlesCard from "./miniSections/ArticlesCard";
-import rosa from "../../images/ROSA.png";
+import CommunityConference from "../../images/Articles/CommunityConference.png";
 import surgicalTraining from "../../images/SurgicalTraining.jpg";
+
 export default function Articles() {
   return (
     <div
@@ -17,12 +18,12 @@ export default function Articles() {
         <div className="card-holders col s12">
           <div class="row">
             <div class="col s12">
-              {/* <ArticlesCard
-                image={rosa}
-                title="ROSA® Knee System"
-                description="The ROSA® Knee System is an advanced robotic technology developed by surgeons, aiming to enhance knee replacement surgery. It provides surgeons with objective feedback on soft tissue and precise bone cutting capabilities. By collecting real-time surgical metrics, ROSA Knee supports informed decision-making, enabling surgeons to focus on achieving optimal outcomes that restore natural knee function for patients."
-                link="https://www.zimmerbiomet.com/en/products-and-solutions/specialties/knee/rosa--knee-system.html"
-              ></ArticlesCard> */}
+              <ArticlesCard
+                image={CommunityConference}
+                title="St. Mary's Ortho: Osteoporosis & Osteoarthritis"
+                description="The event encourages dialogue and connection between researchers and the community, with the SMRC Orthopaedics team helping bridge local knowledge and medical research."
+                link="https://www.ciusss-ouestmtl.gouv.qc.ca/en/news-and-events/single/conference-communautaire-du-crsm-orthopedie-a-st-mary-1"
+              ></ArticlesCard>
               {/* <ArticlesCard
                 image={surgicalTraining}
                 title="Anterior Approach Training"
