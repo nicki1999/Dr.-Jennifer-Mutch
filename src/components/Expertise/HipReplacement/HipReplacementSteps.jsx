@@ -1,6 +1,6 @@
 import THAPreOp from "../../../images/Hip/Right-THA-Pre-op.png";
 import THAPlanning from "../../../images/Hip/Right-THA-Planning.png";
-import THAPostOp from "../../../images/Hip/Right-THA-Post-op.png";
+import THAPostOp from "../../../images/Hip/Right THA Post-op 2.png";
 
 export default function HipReplacementSteps() {
   return (

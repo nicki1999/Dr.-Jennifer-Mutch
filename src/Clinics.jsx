@@ -30,9 +30,10 @@ export default function Clinics() {
           </b>
         </h5>
         <p>
-          The Westmount Square Surgery Clinic is a state of the art facility
-          located in Montreal, Quebec. It is a Canadian Accredited Facility with
-          Exemplary Standing.
+          Westmount square has a friendly multilingual staff that will help
+          guide you through the private healthcare process. They have two 400
+          square foot state-of-the-art operating theatres, both equipped for
+          advanced minimally invasive and open procedures.
         </p>
         <div
           id="WestmountsquareCarousel"

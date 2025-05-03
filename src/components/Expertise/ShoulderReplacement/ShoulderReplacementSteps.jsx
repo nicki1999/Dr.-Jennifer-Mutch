@@ -1,6 +1,6 @@
-import ShoulderPreOp from "../../../images/Shoulder/Shoulder-Preop.png";
-import ShoulderPlanning from "../../../images/Shoulder/Shoulder Planning.png";
-import ShoulderPostOp from "../../../images/Shoulder/Shoulder-Post-op.png";
+import ShoulderPreOp from "../../../images/Shoulder/JK - Preop.png";
+import ShoulderPlanning from "../../../images/Shoulder/shoulder-planning-montage.jpg";
+import ShoulderPostOp from "../../../images/Shoulder/JK - Post op.png";
 
 export default function ShoulderReplacementSteps() {
   return (

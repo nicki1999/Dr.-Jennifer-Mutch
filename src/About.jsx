@@ -11,7 +11,7 @@ export default function About() {
         id="about"
       >
         <div className="center">
-          <div className="col s10 offset-s1">
+          <div className="col s10 offset-s1 left-padding">
             <div className="col l6 S12 offset-l1 left-side">
               <h2>
                 <u>About Dr. Mutch</u>
@@ -20,9 +20,8 @@ export default function About() {
                 <b>MD, MSc, FRCSC</b>
               </h5>
               <br />
-              <br />
               <div>
-                <span style={{ fontSize: "1.2rem" }}>
+                <span style={{ fontSize: "1.5rem" }}>
                   {/* Expert in orthopaedic surgery, specializing in sports injuries,
               joint replacements, and reconstruction to help patients regain
               mobility and quality of life. */}
@@ -32,20 +31,13 @@ export default function About() {
                   ERAS (Enhanced Recovery After Surgery) program for West
                   Montreal.
                 </span>
-              </div>
-            </div>
-            <div className="col l4 s12 aboutDrJenniferMutch">
-              <img src={AboutDrJenniferMutch} alt="" />
-            </div>{" "}
-            <div className="row" style={{ marginRight: "8.33%" }}>
-              <div className="col s12 fullWidthAbout offset-s1">
                 <div className="professionalBackgroundAndEducation">
                   <h5>
                     <b>
                       <u>Educational Background + Advanced Training</u>
                     </b>
                   </h5>
-                  <span style={{ fontSize: "1.2rem" }}>
+                  <span style={{ fontSize: "1.5rem" }}>
                     Dr Mutch completed her medical school at McGill University
                     and her orthopedic residency training at the University of
                     Montreal. <br />
@@ -63,19 +55,26 @@ export default function About() {
                     (Toronto Roller Derby) league.
                   </span>
                 </div>
+              </div>
+            </div>
+            <div className="col l4 s12 aboutDrJenniferMutch">
+              <img src={AboutDrJenniferMutch} alt="" />
+            </div>{" "}
+            <div className="row" style={{ marginRight: "8.33%" }}>
+              <div className="col s12 fullWidthAbout offset-s1">
                 <div className="continuingExcellence">
                   <h5>
                     <b>
                       <u>Continuing Excellence</u>
                     </b>
                   </h5>
-                  <span style={{ fontSize: "1.2rem" }}>
+                  <span style={{ fontSize: "1.5rem" }}>
                     Dr Mutch is constantly learning advanced techniques to keep
                     on the leading edge of Orthopedic surgery clinical practise.
                     She has undergone additional certified training in: <br />
                   </span>
                   <br />
-                  <div className="table row s12">
+                  <div className="table row s12" style={{ fontSize: "1.5rem" }}>
                     <div className="col s6">
                       Oxford Partial Knee Replacements
                     </div>
@@ -85,7 +84,7 @@ export default function About() {
                       <span>- Montreal, Quebec, Canada</span>
                     </div>
                   </div>
-                  <div className="table row s12">
+                  <div className="table row s12" style={{ fontSize: "1.5rem" }}>
                     <div className="col s6">
                       Ultrasound guided injections for joints and nerves{" "}
                     </div>
@@ -94,7 +93,7 @@ export default function About() {
                       <span>- London, England</span>
                     </div>
                   </div>
-                  <div className="table row s12">
+                  <div className="table row s12" style={{ fontSize: "1.5rem" }}>
                     <div className="col s6">
                       ROSA (Robotic Surgical Assist) Knee Replacements{" "}
                     </div>
@@ -102,7 +101,7 @@ export default function About() {
                       <span>- Montreal, Quebec, Canada</span> <br />
                     </div>
                   </div>
-                  <div className="table row s12">
+                  <div className="table row s12" style={{ fontSize: "1.5rem" }}>
                     <div className="col s6">
                       Anterior Approach Hip Replacements (2026)
                     </div>
@@ -117,7 +116,7 @@ export default function About() {
                       <u>Current Role</u>
                     </b>
                   </h5>
-                  <span style={{ fontSize: "1.2rem" }}>
+                  <span style={{ fontSize: "1.5rem" }}>
                     Dr Mutch is working out of the highest-volume center for hip
                     and knee replacements in Quebec, Canada and spearheaded the
                     Day Surgery Arthroplasty program at her hospital as well as

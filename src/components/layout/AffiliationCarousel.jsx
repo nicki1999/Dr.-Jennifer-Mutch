@@ -9,7 +9,7 @@ import RoyalCollegeOfPhysiciansAndSurgeonsofCanada from "../../images/Affiliatio
 import StMarysHospitalCenter from "../../images/Affiliations/St-Mary’sHospitalCenter.png";
 import UniversityofMontrealLogo from "../../images/Affiliations/UniversityofMontreal.png";
 import RateMD from "../../images/Affiliations/RateMD.png";
-import { Link } from "react-router-dom";
+import POES from "../../images/Affiliations/POES.png";
 
 export default function AffiliationCarousel() {
   useEffect(() => {
@@ -55,6 +55,9 @@ export default function AffiliationCarousel() {
         </a>
         <a class="carousel-item" href="#eight!">
           <img src={UniversityofMontrealLogo} />
+        </a>
+        <a class="carousel-item" href="#nine!">
+          <img src={POES} />
         </a>
       </div>
 

@@ -1,6 +1,5 @@
 body {
   background-color: white !important;
-  overflow-x: hidden;
 }
 .backgroundColor {
   background-color: #0047ab !important;
@@ -153,7 +152,11 @@ a.waves-effect {
 .aboutDetailed .fullWidthAbout {
   width: 100%;
   text-align: left;
-  margin-top: 100px;
+  margin-top: 20px;
+}
+.aboutDetailed .left-padding {
+  padding-right: 71px;
+  margin-left: 81px;
 }
 .experties .card-holders {
   margin-left: auto;
